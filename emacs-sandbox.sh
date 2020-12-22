@@ -200,4 +200,5 @@ emacs_args=(
 # Actually run Emacs.
 debug "Running: emacs ${emacs_args[@]}"
 
+export XLIB_SKIP_ARGB_VISUALS=1
 emacs "${emacs_args[@]}"
